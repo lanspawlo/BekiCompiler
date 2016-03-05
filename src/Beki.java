@@ -59,39 +59,39 @@ public class Beki {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String args[]) {
-        System.out.println("Enter file name: ");
-
-        String fileName;
-        fileName = scanner.next();
-
-        String op = "compile";
-        String fl = "";
-
-        new Beki(op, fileName, fl);
-
-//        try {
-//            String operation = args[0];
+//        System.out.println("Enter file name: ");
 //
-//            if (!(operation.equalsIgnoreCase("compile") || operation.equalsIgnoreCase("execute"))) {
-//                throw new Exception();
-//            }
+//        String fileName;
+//        fileName = scanner.next();
 //
-//            int i = 0;
-//            String flags = "";
+//        String op = "compile";
+//        String fl = "";
 //
-//            while ((++i < args.length) && (args[i].charAt(0) == '-')) {
-//                flags += args[i].substring(1);
-//            }
-//
-//            if (i < args.length) {
-//                String path = args[i];
-//                new Beki(operation, path, flags);
-//            } else {
-//                throw new Exception();
-//            }
-//        } catch (Exception ex) {
-//            System.out.println(USAGE);
-//        }
+//        new Beki(op, fileName, fl);
+
+        try {
+            String operation = args[0];
+
+            if (!(operation.equalsIgnoreCase("compile") || operation.equalsIgnoreCase("execute"))) {
+                throw new Exception();
+            }
+
+            int i = 0;
+            String flags = "";
+
+            while ((++i < args.length) && (args[i].charAt(0) == '-')) {
+                flags += args[i].substring(1);
+            }
+
+            if (i < args.length) {
+                String path = args[i];
+                new Beki(operation, path, flags);
+            } else {
+                throw new Exception();
+            }
+        } catch (Exception ex) {
+            System.out.println(USAGE);
+        }
     }
 
     private static final String SOURCE_LINE_FORMAT = "%03d %s";
