@@ -1,0 +1,48 @@
+JUNGALAN programThree
+
+PIS
+
+BARYA operator: CHARING
+LETICIA x: DAKS <- 5.5, y: DAKS <- 10
+
+GIVENCHY "Choose an operation: "
+ENTOURAGE operator
+SWITCHIKEL (operator){
+	#Operations#
+	KAHON '+': 
+		GIVENCHY addOp(x,y)
+		JIWAN
+	KAHON '-': 
+GIVENCHY subOp(x,y)
+		JIWAN
+	KAHON '*': 
+GIVENCHY mulOp(x,y)
+		JIWAN
+	KAHON '/': 
+GIVENCHY divOp(x,y)
+		JIWAN
+	TFIOS: 
+printError();
+}
+
+POS
+
+DAKS addOp(DAKS x, DAKS y) {
+	KERI x + y
+}
+
+DAKS subOp(DAKS x, DAKS y) {
+	KERI x - y
+}
+
+DAKS mulOp(DAKS x, DAKS y) {
+	KERI x * y
+}
+
+DAKS divOp(DAKS x, DAKS y) {
+	KERI x / y
+}
+
+WAS printError() {
+	GIVENCHY "INVALID CHARACTER"
+}
