@@ -1,0 +1,18 @@
+JUNGALAN programTwo
+
+PIS
+
+	BARYA alpha: CHAKA
+	GIVENCHY "Please enter a letter: "
+
+	ENTOURAGE alpha
+
+	KRUNG (alpha <-> A OKRAY a OKRAY E OKRAY e OKRAY I OKRAY i OKRAY O OKRAY o OKRAY U OKRAY u)
+
+	GIVENCHY "It is a vowel."
+
+	ANSHANELS
+
+	GIVENCHY "It is a consonant."
+
+POS

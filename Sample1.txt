@@ -1,0 +1,8 @@
+JUNGALAN programOne
+
+PIS
+
+	BARYA str1: CHARING <- "HELLO", str2: CHARING <- "WORLD";
+	GIVENCHY str1 + " " + str2
+
+POS

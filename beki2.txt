@@ -9,7 +9,7 @@ GIVENCHY "Choose an operation: "
 ENTOURAGE operator
 SWITCHIKEL (operator){
 	#Operations#
-	KAHON '+': 
+	KAHON '+':
 		GIVENCHY addOp(x,y)
 		JIWAN
 	KAHON '-': 
@@ -21,7 +21,7 @@ GIVENCHY mulOp(x,y)
 	KAHON '/': 
 GIVENCHY divOp(x,y)
 		JIWAN
-	TFIOS: 
+	TFIOS:
 printError();
 }
 

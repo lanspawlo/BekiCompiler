@@ -29,8 +29,9 @@ public class BekiWordToken extends BekiToken {
 
         if (Character.isSpaceChar(currentChar)) {
             text = textBuffer.toString();
-            if (text == "WHILEY" || text == "CAIRO") {
+            if (text.equals("WHILEY") || text.equals("WHILEY")) {
                 textBuffer.append(currentChar);
+                currentChar = nextChar();
                 while (Character.isLetterOrDigit(currentChar)) {
                     textBuffer.append(currentChar);
                     currentChar = nextChar();
@@ -38,8 +39,9 @@ public class BekiWordToken extends BekiToken {
             }
         } else if (currentChar == '.') {
             text = textBuffer.toString();
-            if (text == "M") {
+            if (text.equals("M")) {
                 textBuffer.append(currentChar);
+                currentChar = nextChar();
                 while (Character.isLetterOrDigit(currentChar)) {
                     textBuffer.append(currentChar);
                     currentChar = nextChar();

@@ -165,7 +165,7 @@ public class Beki {
                     }
 
                     flagBuffer.append("^\n");
-                    flagBuffer.append("***").append(errorMessage);
+                    flagBuffer.append("***").append(errorMessage).append(" line = ").append(lineNumber).append(" pos = ").append(positionNumber);
 
                     if (tokenType != null) {
                         flagBuffer.append(" [at \"").append(tokenType).append("\"]");

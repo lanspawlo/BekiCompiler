@@ -1,0 +1,10 @@
+Sample1 - Hello world, string concat
+Sample2 - If, input, output
+Sample3 - Let, switch, functions
+Sample4 - If-elseif-else
+Sample5 - Do-white, for
+Sample6 - Multiple expressions
+Sample7 - Misspled 
+Sample8 - Lower case everything
+Sample9 - Mutliple expressions, modulo
+Sample10 - While loops

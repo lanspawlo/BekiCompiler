@@ -1,0 +1,18 @@
+JUNGALAN programFive
+
+PIS
+
+	BARYA num, num2: JUTAY
+	BARYA again: CHAKA
+
+	GORA {
+		GIVENCHY "Input a number: "
+		ENTOURAGE num2
+		EVERLOO (JUTAY num <- 1; num < num2 ; num++) {
+			GIVENCHY num
+		}
+		GIVENCHY "Press any key if you want to input another number. If not, Press \'N\'"
+		ENTOURAGE again
+	} WHILEY CYRUS (again </> N)
+
+POS

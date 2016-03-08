@@ -22,11 +22,11 @@ public enum BekiTokenType implements TokenType {
     ADD("+"), SUB("-"), MULT("*"), DIV("/"), MOD("%"), INC("++"), DEC("--"), POW("^"),
     LSTH("<"), GRTH(">"), LSEQ("<="), GREQ(">="), EQUAL("<->"), NOT_EQUAL("</>"),
     LPAR("("), RPAR(")"), LCURL("{"), RCURL("}"), //LBRAC("["), RBRAC("]"),
-    COLON(":"), SEMIC(";"), COMMA(","),
+    COLON(":"), SEMIC(";"), EOL("."), COMMA(","),
 
     AROP1, AROP2, RELOP, LOGOP,
     ID, NUMCONST, CHARCONST, BOOLCONST, STRINGCONST, DECCONST,
-    ERROR, EOL, EOF;
+    ERROR, EOF;
 
     private static final int FIRST_RESERVED_INDEX = PROGRNAME.ordinal();
     private static final int LAST_RESERVED_INDEX  = RETURN.ordinal();

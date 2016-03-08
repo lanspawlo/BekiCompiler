@@ -1,0 +1,12 @@
+JUNGALAN programSix
+
+PIS
+
+	BARYA temp: DAKS
+
+	GIVENCHY "Enter temperature in Fahrenheit"
+	ENTOURAGE temp
+	temp <- (temp-32)*5/9
+	GIVENCHY "Temperature in Celsius " + temp
+
+POS

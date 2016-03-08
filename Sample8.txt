@@ -1,0 +1,17 @@
+jungalan programFive
+
+pis
+
+	barya num, num2: jutay
+	barya again: chaka
+
+	gora {
+		givenchy "Input a number: "
+		entourage num2
+		everloo (JUTAY num <- 1; num < num2 ; num++)
+		givenchy num
+		givenchy "Press any key if you want to input another number. If not, Press \'N\'"
+		entourage again
+	} whiley cyrus(again </> N)
+
+pos

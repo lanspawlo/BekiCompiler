@@ -1,0 +1,10 @@
+#The reserved words JUNGALAN, PIS, JUTAY and POS are misspelled. The lexical analyzer will interpret these characters as identifiers.#
+
+JULAN programSeven
+
+SIS
+
+	BARYA num: JUTS = "Hello"
+	GIVENCHY num
+
+POSNA

@@ -25,7 +25,7 @@ public class BekiSpecialSymbolToken extends BekiToken {
         switch (currentChar) {
 
             case '*':  case '/':  case '%':  case ',':  case ';':
-            case '=':  case '(':  case ')':  case ':':
+            case '=':  case '(':  case ')':  case ':':  case '.':
             case '{':  case '}':  case '^': //case '[':  case ']':
             {
                 nextChar();
@@ -39,15 +39,24 @@ public class BekiSpecialSymbolToken extends BekiToken {
                     case '-': {
                         text += currentChar;
                         currentChar = nextChar();
-                        if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/') {
+                        if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/' || currentChar == '>') {
                             text += currentChar;
                             nextChar();
                         }
                         break;
                     }
-                    case '=':  case '>': {
+                    case '=': {
                         text += currentChar;
                         nextChar();
+                        break;
+                    }
+                    case '/': {
+                        text += currentChar;
+                        currentChar = nextChar();
+                        if (currentChar == '>') {
+                            text += currentChar;
+                            nextChar();
+                        }
                         break;
                     }
                 }

@@ -1,0 +1,36 @@
+JUNGALAN programFour
+
+PIS
+
+	BARYA grade : JUTAY
+	BARYA failed: BOOLMA <- PAK
+
+	GIVENCHY "Input grade: "
+	ENTOURAGE grade
+
+	KRUNG (grade <-> 100) {
+		failed <- WIZ
+		GIVENCHY "A"
+	} ELSKRUNG (grade <=99 ANDABELZ grade >=90) {
+		failed <- WIZ
+		GIVENCHY "B"
+	} ELSKRUNG (grade <=89 ANDABELZ grade >=80) {
+		failed <- WIZ
+		GIVENCHY "C"		
+	} ELSKRUNG (grade <=79 ANDABELZ grade >=70) {
+		failed <- WIZ
+		GIVENCHY "D"
+	} ELSKRUNG(grade <=69 ANDABELZ grade >=60) {
+		failed <- WIZ
+		GIVENCHY "E"
+	} ANSHANELS {
+		GIVENCHY "F"
+	}
+
+	KRUNG (failed) {
+		GIVENCHY "Sorry, You failed!"
+	} ANSHANELS {
+		GIVENCHY "Congratulations, You passed!"
+	}
+
+POS

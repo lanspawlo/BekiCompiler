@@ -1,0 +1,53 @@
+JUNGALAN programTen
+
+PIS
+
+	BARYA A: DAKS, B: DAKS, C: DAKS, D: DAKS, E: DAKS, F: DAKS, total: DAKS
+
+	BARYA fruitChoice: CHARING
+
+	GIVENCHY "A - Apple ($0.50) ENDCHY B - Banana ($1.50) ENDCHY C - Orange ($2.00) ENDCHY D - Avocado ($2.50) ENDCHY E - Mango ($3.00) F - Pineapple ($3.50)"
+
+	GIVENCHY "Please input the letter of the fruit(s) you wish to buy: "
+	GIVENCHY "Input '0' if you are done choosing"
+	ENTOURAGE fruitChoice
+
+
+	WHILEY CYRUS (fruitChoice </> 0) {	
+		KRUNG(fruitChoice <-> 'A') {
+			total <- total + 0.50
+			A++
+		}
+		ELSKRUNG(fruitChoice <-> 'B') {
+			total <- total + 1.50
+			B++
+		}
+		ELSKRUNG(fruitChoice <-> 'C') {
+			total <- total + 2.00
+			C++
+		}
+		ELSKRUNG(fruitChoice <-> 'D') {
+			total <- total + 2.50
+			D++
+		}
+		ELSKRUNG(fruitChoice <-> 'E') {
+			total <- total + 3.50
+			E++
+		}
+		ELSKRUNG(fruitChoice <-> 'F') {
+			total <- total + 3.00
+			F++
+		}
+		ANSHANELS {
+			GIVENCHY "Invalid choice."
+		}
+
+		GIVENCHY "Please input letter again: "
+		ENTOURAGE fruitChoice
+	} 
+	 
+
+	GIVENCHY "Apple: " + A + ENDCHY "Banana: " + B + ENDCHY "Orange: "  + C + ENDCHY "Avocado: " + D + ENDCHY + "Mango: " + E + "Pineapple: " + F
+	GIVENCHY "The total amount you purchased is" + total
+
+POS
