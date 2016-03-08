@@ -1,10 +1,14 @@
-#The reserved words JUNGALAN, PIS, JUTAY and POS are misspelled. The lexical analyzer will interpret these characters as identifiers.#
+#The reserved words JUNGALAN, PIS, JUTAY and POS are misspelled. The lexical analyzer will interpret these characters as identifiers.
+
+This program will also produce errors (invalid character, integer out of range and decimal out of range.#
 
 JULAN programSeven
 
 SIS
 
 	BARYA num: JUTS = "Hello"
+	LETICIA num1 <- 1234567890123 ~ @
+	BARYA num2 <- 12345678901234567890123456789012345678901234567.1234 
 	GIVENCHY num
 
 POSNA

@@ -26,7 +26,7 @@ public class CrossReferencer {
 
     public void print(SymTabStack symTabStack)
     {
-        System.out.println("\n===== CROSS-REFERENCE TABLE =====");
+        System.out.println("\n===== SYMBOL TABLE =====");
         printColumnHeadings();
 
         printSymTab(symTabStack.getLocalSymTab());
